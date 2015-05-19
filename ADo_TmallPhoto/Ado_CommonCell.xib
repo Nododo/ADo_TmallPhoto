@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="Ado_CommonCell">
+            <rect key="frame" x="0.0" y="0.0" width="169" height="194"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="169" height="194"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="luffy.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XAZ-ed-69U">
+                        <rect key="frame" x="0.0" y="0.0" width="169" height="179"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@杜维欣_" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqr-ZT-bPp">
+                        <rect key="frame" x="0.0" y="179" width="169" height="15"/>
+                        <color key="backgroundColor" red="0.73521448180000004" green="0.97111742420000002" blue="0.91729964070000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="V4s-aH-KNq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="XAZ-ed-69U" secondAttribute="trailing" id="M1g-oa-oRQ"/>
+                <constraint firstItem="XAZ-ed-69U" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Xao-gN-Uuh"/>
+                <constraint firstItem="nqr-ZT-bPp" firstAttribute="top" secondItem="XAZ-ed-69U" secondAttribute="bottom" id="dwK-NK-SQ1"/>
+                <constraint firstItem="XAZ-ed-69U" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="e5P-hv-wqU"/>
+                <constraint firstItem="nqr-ZT-bPp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="eud-5I-H7a"/>
+                <constraint firstAttribute="bottom" secondItem="nqr-ZT-bPp" secondAttribute="bottom" id="uGa-dn-Lv1"/>
+                <constraint firstAttribute="trailing" secondItem="nqr-ZT-bPp" secondAttribute="trailing" id="uKR-7R-VPZ"/>
+            </constraints>
+            <size key="customSize" width="169" height="194"/>
+            <connections>
+                <outlet property="photoView" destination="XAZ-ed-69U" id="yoN-sH-gpJ"/>
+            </connections>
+            <point key="canvasLocation" x="106.5" y="227"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="luffy.jpg" width="265" height="220"/>
+    </resources>
+</document>
